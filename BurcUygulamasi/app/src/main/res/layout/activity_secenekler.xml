@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Secenekler"
+    android:background="@color/lightbrown">
+
+    <Button
+        android:id="@+id/btnZodiac"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Burcunu Öğren"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/brown"
+        />
+
+    <Button
+        android:id="@+id/btnAscendant"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Yükselenini Öğren"
+        app:layout_constraintTop_toBottomOf="@id/btnZodiac"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/brown"/>
+
+    <Button
+        android:id="@+id/btnDaily"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Günlük Burç Yorumu"
+        app:layout_constraintTop_toBottomOf="@id/btnAscendant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/brown"/>
+
+    <Button
+        android:id="@+id/btnWeekly"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Haftalık Burç Yorumu"
+        app:layout_constraintTop_toBottomOf="@id/btnDaily"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/brown"/>
+
+    <Button
+        android:id="@+id/btnMonthly"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Aylık Burç Yorumu"
+        app:layout_constraintTop_toBottomOf="@id/btnWeekly"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/brown"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
