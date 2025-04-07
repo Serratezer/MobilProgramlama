@@ -3,15 +3,15 @@ package com.example.burcuygulamasi;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class Burc_Ogren extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,12 +56,21 @@ public class MainActivity extends AppCompatActivity {
             String monthStr = etMonth.getText().toString();
 
             if (!dayStr.isEmpty() && !monthStr.isEmpty()) {
-                int day = Integer.parseInt(dayStr);
-                int month = Integer.parseInt(monthStr);
-                String burc = getZodiacSign(day, month);
-                tvResult.setText("Burcunuz: " + burc);
+                try {
+                    int day = Integer.parseInt(dayStr);
+                    int month = Integer.parseInt(monthStr);
+
+                    if (isValidDate(day, month)) {
+                        String burc = getZodiacSign(day, month);
+                        tvResult.setText("Burcunuz: " + burc);
+                    } else {
+                        tvResult.setText("Geçersiz tarih! Lütfen doğru bir gün ve ay girin.");
+                    }
+                } catch (NumberFormatException e) {
+                    tvResult.setText("Lütfen geçerli bir sayı girin!");
+                }
             } else {
-                tvResult.setText("Lütfen geçerli bir tarih girin!");
+                tvResult.setText("Lütfen tüm alanları doldurun!");
             }
         });
 
@@ -84,6 +93,20 @@ public class MainActivity extends AppCompatActivity {
         if ((month == 11 && day >= 22) || (month == 12 && day <= 21)) return "Yay";
         if ((month == 12 && day >= 22) || (month == 1 && day <= 19)) return "Oğlak";
         return "Geçersiz tarih!";
+    }
 
+    // Geçerli tarih olup olmadığını kontrol eden fonksiyon
+    private boolean isValidDate(int day, int month) {
+        if (month < 1 || month > 12 || day < 1 || day > 31) return false;
+
+        // Ayların gün sayısı
+        int[] daysInMonth = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+        // Şubat ayı ve artık yıl kontrolü
+        if (month == 2) {
+            return day <= 29;
+        }
+
+        return day <= daysInMonth[month];
     }
 }
