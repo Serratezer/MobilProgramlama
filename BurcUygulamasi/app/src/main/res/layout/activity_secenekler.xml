@@ -92,4 +92,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnWeekly" />
 
+    <Button
+        android:id="@+id/btnTestNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Et"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="583dp" />
+
+    <Button
+        android:id="@+id/buttonGeri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Geri Dön"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="643dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

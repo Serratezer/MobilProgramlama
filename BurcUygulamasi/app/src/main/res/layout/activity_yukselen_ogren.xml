@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Gün -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doğum Günü"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/editDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gün (1-31)"
+            android:inputType="number"
+            android:textColor="#FFF"
+            android:backgroundTint="#FFF" />
+
+        <!-- Ay -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doğum Ayı"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/editMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ay (1-12)"
+            android:inputType="number"
+            android:textColor="#FFF"
+            android:backgroundTint="#FFF" />
+
+        <!-- Yıl -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doğum Yılı"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/editYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Yıl (örn: 2001)"
+            android:inputType="number"
+            android:textColor="#FFF"
+            android:backgroundTint="#FFF" />
+
+        <!-- Saat -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doğum Saati"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/editHour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Saat (0-23)"
+            android:inputType="number"
+            android:textColor="#FFF"
+            android:backgroundTint="#FFF" />
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yükseleni Hesapla"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/btnGDon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geri Dön" />
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>
