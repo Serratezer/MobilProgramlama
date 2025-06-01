@@ -12,7 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BurcUygulamasi"
         tools:targetApi="31">
-
+        <activity
+            android:name=".HaftalikYorum"
+            android:exported="false" />
+        <activity
+            android:name=".AylikYorum"
+            android:exported="false" />
         <activity
             android:name=".AnaEkran"
             android:exported="false" />

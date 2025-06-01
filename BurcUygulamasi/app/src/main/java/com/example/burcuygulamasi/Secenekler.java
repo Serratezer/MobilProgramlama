@@ -34,6 +34,28 @@ public class Secenekler extends AppCompatActivity {
                 Intent intent = new Intent(Secenekler.this, Burc_Ogren.class);
                 startActivity(intent);
             }
+
         });
+        Button btnDailyHoroscope = findViewById(R.id.btnDaily);
+
+        btnDailyHoroscope.setOnClickListener(v -> {
+            Intent intent = new Intent(Secenekler.this, GunlukYorum.class);
+            startActivity(intent);
+        });
+
+        Button btnMonthly = findViewById(R.id.btnMonthly);
+        btnMonthly.setOnClickListener(v -> {
+            Intent intent = new Intent(Secenekler.this, AylikYorum.class);
+            startActivity(intent);
+        });
+
+        Button btnWeeklyHoroscope = findViewById(R.id.btnWeekly);
+
+        btnWeeklyHoroscope.setOnClickListener(v -> {
+            Intent intent = new Intent(Secenekler.this, HaftalikYorum.class);
+            startActivity(intent);
+        });
+
+
     }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/layoutDailyHoroscope"
+    android:id="@+id/layoutWeeklyHoroscope"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -12,7 +12,7 @@
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Günlük Burç Yorumunuz"
+        android:text="Haftalık Burç Yorumunuz"
         android:textSize="24sp"
         android:textColor="#FFFFFF"
         android:layout_marginBottom="16dp" />
@@ -27,10 +27,10 @@
         android:layout_marginBottom="12dp" />
 
     <TextView
-        android:id="@+id/textViewDailyComment"
+        android:id="@+id/textViewWeeklyComment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bugün duygusal olarak güçlü bir gün geçirebilirsiniz."
+        android:text="Bu hafta iç dünyanızda huzur arayışında olabilirsiniz."
         android:textSize="16sp"
         android:textColor="#FFFFFF"
         android:layout_marginBottom="24dp" />
@@ -39,8 +39,6 @@
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Geri Dön"
-        android:backgroundTint="#880E4F"
-        android:textColor="#FFFFFF" />
+        android:text="Geri Dön" />
 
 </LinearLayout>

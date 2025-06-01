@@ -1,5 +1,6 @@
 package com.example.burcuygulamasi;
 
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -23,18 +24,21 @@ public class Burc_Ogren extends AppCompatActivity {
         mainLayout.setOrientation(LinearLayout.VERTICAL);
         mainLayout.setPadding(50, 50, 50, 50);
         mainLayout.setGravity(Gravity.CENTER);
+        mainLayout.setBackgroundResource(R.drawable.background);
 
         // EditText (Gün)
         EditText etDay = new EditText(this);
         etDay.setHint("Gün (1-31)");
-        etDay.setTextColor(Color.BLACK);
+        etDay.setTextColor(Color.WHITE); // Kullanıcının yazdığı metin
+        etDay.setHintTextColor(Color.WHITE); // Hint metni
         etDay.setGravity(Gravity.CENTER);
         mainLayout.addView(etDay);
 
         // EditText (Ay)
         EditText etMonth = new EditText(this);
         etMonth.setHint("Ay (1-12)");
-        etMonth.setTextColor(Color.BLACK);
+        etMonth.setTextColor(Color.WHITE); // Kullanıcının yazdığı metin
+        etMonth.setHintTextColor(Color.WHITE); // Hint metni
         etMonth.setGravity(Gravity.CENTER);
         mainLayout.addView(etMonth);
 
@@ -46,9 +50,22 @@ public class Burc_Ogren extends AppCompatActivity {
         // Sonuç Gösterme Alanı
         TextView tvResult = new TextView(this);
         tvResult.setTextSize(18);
-        tvResult.setTextColor(Color.BLACK);
+        tvResult.setTextColor(Color.WHITE);
         tvResult.setGravity(Gravity.CENTER);
         mainLayout.addView(tvResult);
+
+        // Geri Dön Butonu
+        Button btnBack = new Button(this);
+        btnBack.setText("Geri Dön");
+        btnBack.setBackgroundColor(Color.parseColor("#AA00FF")); // mor tonlarında bir geri buton
+        btnBack.setTextColor(Color.WHITE);
+        mainLayout.addView(btnBack);
+
+        btnBack.setOnClickListener(v -> {
+            finish(); // önceki aktiviteye döner
+        });
+
+
 
         // Buton tıklanınca burç hesaplama
         btnCalculate.setOnClickListener(v -> {
@@ -63,6 +80,13 @@ public class Burc_Ogren extends AppCompatActivity {
                     if (isValidDate(day, month)) {
                         String burc = getZodiacSign(day, month);
                         tvResult.setText("Burcunuz: " + burc);
+
+                        // BURCU KAYDET
+                        SharedPreferences sharedPreferences = getSharedPreferences("BurcData", MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putString("zodiacSign", burc);
+                        editor.apply();
+
                     } else {
                         tvResult.setText("Geçersiz tarih! Lütfen doğru bir gün ve ay girin.");
                     }
@@ -73,6 +97,7 @@ public class Burc_Ogren extends AppCompatActivity {
                 tvResult.setText("Lütfen tüm alanları doldurun!");
             }
         });
+
 
         // Ana layout'u ekrana set et
         setContentView(mainLayout);
@@ -108,5 +133,8 @@ public class Burc_Ogren extends AppCompatActivity {
         }
 
         return day <= daysInMonth[month];
+
+
     }
+
 }
