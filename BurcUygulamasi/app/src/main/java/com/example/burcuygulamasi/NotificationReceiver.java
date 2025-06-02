@@ -3,14 +3,20 @@ package com.example.burcuygulamasi;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 
 public class NotificationReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
+        SharedPreferences prefs = context.getSharedPreferences("BurcData", Context.MODE_PRIVATE);
+        String zodiac = prefs.getString("zodiacSign", "Burcun");
+
+        String dailyComment = NotificationHelper.getRandomDailyComment(context);
+
         NotificationHelper.showNotification(
                 context,
-                "Bugünün burç yorumunu okudun mu?",
-                "Günlük burç yorumun seni bekliyor. Hemen kontrol et!"
+                zodiac + " için Günlük Yorum",
+                dailyComment
         );
     }
 }

@@ -39,29 +39,29 @@ public class GunlukYorum extends AppCompatActivity {
     private String getDailyComment(String zodiac) {
         switch (zodiac) {
             case "Koç":
-                return "Bugün cesur kararlar alma zamanı.";
+                return "Bugün cesur kararlar almak için harika bir gün. İçinizdeki liderlik ruhu sayesinde zorlukların üstesinden kolayca gelebilirsiniz. Risk almaktan çekinmeyin, başarı sizi bekliyor.";
             case "Boğa":
-                return "Finansal konularda dikkatli olun.";
+                return "Maddi konularda dikkatli olmanız gereken bir gündesiniz. Harcamalarınızı gözden geçirip gereksiz giderlerden kaçının. Ancak sevdiklerinizle zaman geçirmek size iyi gelecek.";
             case "İkizler":
-                return "İletişim becerilerinizle öne çıkabilirsiniz.";
+                return "İletişim gücünüz bugün oldukça yüksek. Yeni insanlarla tanışabilir, etkili konuşmalar yapabilirsiniz. Sosyal çevrenizden ilham alabilir, yaratıcı projelere yönelebilirsiniz.";
             case "Yengeç":
-                return "İç sesinize kulak verin. Kararlarınız sizi şaşırtabilir.";
+                return "İç sesinize kulak vererek alacağınız kararlar sizi şaşırtabilir ama doğru yolda olduğunuzu gösterecek. Ailevi konularda destekleyici tavırlarınız olumlu sonuçlar getirebilir.";
             case "Aslan":
-                return "Özgüveniniz çevrenizi etkileyecek.";
+                return "Kendinize olan güveniniz çevrenizdeki insanları da etkisi altına alacak. Bugün dikkatleri üzerinize çekiyorsunuz. Yeni bir başlangıç yapmak ya da sahneye çıkmak için ideal bir zaman.";
             case "Başak":
-                return "Detaylara dikkat edin, fırsatlar oralarda gizli.";
+                return "Detaylara gösterdiğiniz özen sayesinde fark yaratacaksınız. Bugün düzen kurma ve planlama açısından verimli bir gün olabilir. Zihniniz net, kararlarınız sağlam olacak.";
             case "Terazi":
-                return "Dengeyi korumak size iyi gelecek.";
+                return "Dengenizi koruyarak hareket etmek bugün size huzur getirecek. Karar vermekte zorlanabilirsiniz ama iç huzurunuzu bozacak adımlardan uzak durmanız faydalı olacaktır.";
             case "Akrep":
-                return "Gizli duygularınız yüzeye çıkabilir.";
+                return "Bastırılmış duygularınız bugün yüzeye çıkabilir. Bunlarla yüzleşmek sizi rahatlatacak. İçsel dönüşümünüz için önemli bir fırsat olabilir, kendinize zaman ayırın.";
             case "Yay":
-                return "Yeni maceralara açık olun.";
+                return "Yeni yerler keşfetmek, farklı bakış açılarıyla tanışmak için güzel bir gün. Macera ruhunuz yükseliyor. Ufkunuzu genişletecek deneyimlere açık olun.";
             case "Oğlak":
-                return "Disiplinli çalışmanız takdir toplayacak.";
+                return "Disiplinli ve planlı yapınız sayesinde bugün ciddi anlamda yol kat edebilirsiniz. Sorumluluklarınızın farkındasınız ve çevreniz sizin bu yönünüzü takdir ediyor.";
             case "Kova":
-                return "Yaratıcılığınızı konuşturma zamanı.";
+                return "Yaratıcı fikirleriniz bugün ışıldıyor. Alışılmışın dışına çıkmaktan korkmayın. Sosyal ilişkilerinizde özgürlük ihtiyacınız ön planda olabilir.";
             case "Balık":
-                return "Hayal gücünüzle harikalar yaratabilirsiniz.";
+                return "Hayal gücünüz bugün dorukta. Sanatsal uğraşlara yönelebilir veya duygusal anlamda derin paylaşımlar yaşayabilirsiniz. Ruhsal olarak şifa bulacağınız bir gün olabilir.";
             default:
                 return "Burç bilgisi bulunamadı. Lütfen önce burcunuzu hesaplayın.";
         }

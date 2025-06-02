@@ -38,29 +38,29 @@ public class HaftalikYorum extends AppCompatActivity {
     private String getWeeklyComment(String zodiac) {
         switch (zodiac) {
             case "Koç":
-                return "Bu hafta yeni başlangıçlar sizi bekliyor.";
+                return "Bu hafta hayatınızda yeni başlangıçlara hazır olun. Uzun süredir ertelediğiniz bir karar artık gündeminize gelebilir. Cesaretiniz ve enerjiniz sayesinde yeni adımlar atmaktan çekinmeyeceksiniz. İnisiyatif almak size fayda sağlayacak.";
             case "Boğa":
-                return "İstikrar ve güven arayışınız ön planda.";
+                return "İstikrar ve güven arayışınız bu hafta ön planda olacak. Hem iş hem özel hayatınızda sağlam temeller atmak isteyebilirsiniz. Kendinizi huzurlu hissettiğiniz ortamlarda bulunmak size iyi gelecek. Maddi konularda dikkatli davranmakta fayda var.";
             case "İkizler":
-                return "Sosyal çevrenizden sürprizler gelebilir.";
+                return "Bu hafta sosyal çevrenizden sürpriz gelişmelerle karşılaşabilirsiniz. Yeni insanlarla tanışmak, yeni fikirler üretmek açısından hareketli bir hafta sizi bekliyor. Ani planlar, eğlenceli ortamlarda bulunmak ruh halinizi olumlu etkileyecek.";
             case "Yengeç":
-                return "Duygusal dengelerle ilgili gelişmeler olabilir.";
+                return "Duygusal anlamda yoğun bir haftaya giriş yapıyorsunuz. Aile içi meseleler ya da geçmişe dair bazı konular gündeminize gelebilir. Bu duygusal yoğunluk size farkındalık kazandıracak. Kendinize vakit ayırmak, iç sesinizi dinlemek önemli olacak.";
             case "Aslan":
-                return "Liderlik özellikleriniz öne çıkıyor.";
+                return "Bu hafta liderlik özellikleriniz ön plana çıkıyor. Grup çalışmalarında öne çıkabilir, sorumluluk alabilirsiniz. Karar verme yetiniz ve özgüveniniz sayesinde çevrenizden takdir göreceksiniz. Ancak kibirli tavırlardan kaçınmanızda fayda var.";
             case "Başak":
-                return "Planlama ve düzenle ilgili işleriniz hızlanacak.";
+                return "Planlama ve düzenle ilgili işler bu hafta hız kazanıyor. Yapılacaklar listenizi düzene koymak ve detaylarla ilgilenmek açısından verimli bir dönem. Aynı zamanda sağlık ve yaşam rutinlerinizle ilgili düzenlemeler yapmak için de uygun bir zaman.";
             case "Terazi":
-                return "İlişkilerinizde netlik zamanı.";
+                return "İkili ilişkilerde netlik kazanacağınız bir hafta olabilir. Kararsız kaldığınız bazı konularda artık bir tercih yapma zamanı gelmiş olabilir. Dengenizi koruyarak hareket etmek, karşı tarafı da anlamaya çalışmak size kazandıracak.";
             case "Akrep":
-                return "İç dünyanızda değişim yaşayabilirsiniz.";
+                return "Bu hafta iç dünyanızda derin bir dönüşüm yaşayabilirsiniz. Kendi motivasyonlarınızı gözden geçireceğiniz, belki de bazı yönlerinizi değiştirmek isteyeceğiniz bir süreç olabilir. Gizli kalan bazı gerçeklerle yüzleşmek sizi özgürleştirebilir.";
             case "Yay":
-                return "Yolculuklar ve keşifler için uygun bir hafta.";
+                return "Yolculuklar, keşifler ve yeni deneyimler için harika bir hafta. Uzaklardan gelen haberler veya seyahat planları gündeme gelebilir. Aynı zamanda entelektüel olarak da gelişmeye açık bir dönem. Eğitim ve öğrenme konularında destek görebilirsiniz.";
             case "Oğlak":
-                return "Kariyerinizde olumlu gelişmeler yaşanabilir.";
+                return "Kariyer hayatınızda olumlu gelişmeler kapınızda. Yeni bir sorumluluk, terfi ya da proje gündeminize gelebilir. Çalışmalarınızın karşılığını almaya başlayacağınız bir süreçtesiniz. Planlı ve disiplinli olmanız size avantaj sağlayacak.";
             case "Kova":
-                return "Farklı düşünceler sizi başarıya götürebilir.";
+                return "Bu hafta farklı düşünceler ve yenilikçi yaklaşımlar sizi başarıya götürebilir. Kalıpların dışına çıkmak size ilham verecek. Özellikle teknoloji, bilim veya toplumsal konulara ilgi duymanız mümkün. Yeni projelere açık olun.";
             case "Balık":
-                return "Hayal gücünüzü pratiğe dökme zamanı.";
+                return "Hayal gücünüzü pratiğe dökme zamanı geldi. Yaratıcılığınızı daha somut işler için kullanabilirsiniz. Sanatsal faaliyetler, duygusal paylaşımlar ve ruhsal gelişim için uygun bir hafta olacak. Sezgilerinizden faydalanın.";
             default:
                 return "Burç bilgisi bulunamadı. Lütfen önce burcunuzu hesaplayın.";
         }
